@@ -1,0 +1,207 @@
+body {
+    font-family: 'Exo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+header {
+    background: linear-gradient(to right, #000000, #00FFFF);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00FF00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00CC00;
+}
+
+body {
+    font-family: 'Exo', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+header {
+    background: linear-gradient(to right, #000000, #00FFFF);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Stil for knapper */
+.button {
+    background-color: #00FF00; /* Grønn bakgrunnsfarge */
+    border: none;
+    color: #FFFFFF; /* Hvit tekstfarge */
+    padding: 15px 30px; /* Padding for å gi knappen litt størrelse */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 8px; /* Avrundede hjørner */
+    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.5); /* Grønn skyggeeffekt */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Glidende overganger */
+}
+
+/* Hover-effekt for knapper */
+.button:hover {
+    background-color: #00CC00; /* Mørkere grønn bakgrunnsfarge ved hover */
+    box-shadow: 0 8px 16px rgba(0, 255, 0, 0.7); /* Større skyggeeffekt ved hover */
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00FF00;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00CC00;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.section {
+    background-image: url(''); /* Erstat 'path/to/your/image.jpg' med stien til ditt bilde */
+    background-size: cover; /* Sikrer at bildet dekker hele seksjonen */
+    background-position: center; /* Sentrerer bildet i seksjonen */
+    background-repeat: no-repeat; /* Sikrer at bildet ikke gjentas */
+    padding: 20px; /* Tilpas padding etter behov */
+    color: #FFFFFF; /* Tekstfarge for å sikre god lesbarhet mot bakgrunnsbildet */
+}
+
+footer {
+    background: linear-gradient(to right, #000000, #00FFFF);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 95%;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .section {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 5px 0;
+    }
+}
+
+/* Utsmykning rundt h1 */
+h1 {
+    font-size: 2.5em;
+    color: #00FFFF;
+    text-shadow: 2px 2px 5px #00FF00, -2px -2px 5px #FF00FF;
+    margin: 20px 0;
+    text-align: center;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #111;
+    border-radius: 10px;
+}
+
+footer {
+    background: linear-gradient(to right, #000000, #00FFFF);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
