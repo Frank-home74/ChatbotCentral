@@ -8,8 +8,10 @@ body {
 
 header {
     background: linear-gradient(to right, #000000, #00FFFF);
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif; /* Du kan bytte ut denne med en mer futuristisk font */
 }
 
 .logo {
@@ -39,71 +41,281 @@ nav ul li a:hover {
     color: #00CC00;
 }
 
-body {
-    font-family: 'Exo', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-    color: #FFFFFF;
-}
-
-header {
-    background: linear-gradient(to right, #000000, #00FFFF);
-    padding: 20px 0;
-    text-align: center;
-}
-
-.logo {
-    width: 50px;
-    height: 50px;
-}
-
-/* Stil for knapper */
-.button {
-    background-color: #00FF00; /* Grønn bakgrunnsfarge */
-    border: none;
-    color: #FFFFFF; /* Hvit tekstfarge */
-    padding: 15px 30px; /* Padding for å gi knappen litt størrelse */
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 2px;
-    cursor: pointer;
-    border-radius: 8px; /* Avrundede hjørner */
-    box-shadow: 0 4px 8px rgba(0, 255, 0, 0.5); /* Grønn skyggeeffekt */
+/* Ekstra CSS for #introduksjon */
+#introduksjon {
+    background-color: #1a1a1a; /* Mørk bakgrunnsfarge */
+    border-radius: 10px; /* Avrundede hjørner */
+    padding: 20px; /* Litt ekstra padding */
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5); /* Neonblå skyggeeffekt */
     transition: background-color 0.3s, box-shadow 0.3s; /* Glidende overganger */
 }
 
-/* Hover-effekt for knapper */
-.button:hover {
-    background-color: #00CC00; /* Mørkere grønn bakgrunnsfarge ved hover */
-    box-shadow: 0 8px 16px rgba(0, 255, 0, 0.7); /* Større skyggeeffekt ved hover */
+#introduksjon h2 {
+    color: #00FFFF; /* Neonblå tekstfarge */
+    font-size: 2em; /* Større tekststørrelse */
+    margin-bottom: 10px; /* Litt ekstra marg */
 }
 
+#introduksjon p {
+    color: #FFFFFF; /* Hvit tekstfarge */
+    font-size: 1.2em; /* Litt større tekststørrelse */
+    line-height: 1.6; /* Bedre linjeavstand */
+}
 
+/* Hover-effekt for #introduksjon */
+#introduksjon:hover {
+    background-color: #222; /* Litt lysere bakgrunnsfarge ved hover */
+    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.7); /* Større skyggeeffekt ved hover */
+}
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+/* Ekstra CSS for #nyheter-og-oppdateringer */
+#nyheter-og-oppdateringer {
+    background-color: #1a1a1a; /* Mørk bakgrunnsfarge */
+    border-radius: 10px; /* Avrundede hjørner */
+    padding: 20px; /* Litt ekstra padding */
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5); /* Neonblå skyggeeffekt */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Glidende overganger */
+}
+
+#nyheter-og-oppdateringer h2 {
+    color: #00FFFF; /* Neonblå tekstfarge */
+    font-size: 2em; /* Større tekststørrelse */
+    margin-bottom: 10px; /* Litt ekstra marg */
+}
+
+#nyheter-og-oppdateringer p {
+    color: #FFFFFF; /* Hvit tekstfarge */
+    font-size: 1.2em; /* Litt større tekststørrelse */
+    line-height: 1.6; /* Bedre linjeavstand */
+}
+
+/* Hover-effekt for #nyheter-og-oppdateringer */
+#nyheter-og-oppdateringer:hover {
+    background-color: #222; /* Litt lysere bakgrunnsfarge ved hover */
+    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.7); /* Større skyggeeffekt ved hover */
+}
+
+/* Ekstra CSS for #lokale-modeller */
+#lokale-modeller {
+    background-color: #1a1a1a; /* Mørk bakgrunnsfarge */
+    border-radius: 10px; /* Avrundede hjørner */
+    padding: 20px; /* Litt ekstra padding */
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5); /* Neonblå skyggeeffekt */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Glidende overganger */
+}
+
+#lokale-modeller h2 {
+    color: #00FFFF; /* Neonblå tekstfarge */
+    font-size: 2em; /* Større tekststørrelse */
+    margin-bottom: 10px; /* Litt ekstra marg */
+}
+
+#lokale-modeller p {
+    color: #FFFFFF; /* Hvit tekstfarge */
+    font-size: 1.2em; /* Litt større tekststørrelse */
+    line-height: 1.6; /* Bedre linjeavstand */
+}
+
+/* Hover-effekt for #lokale-modeller */
+#lokale-modeller:hover {
+    background-color: #222; /* Litt lysere bakgrunnsfarge ved hover */
+    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.7); /* Større skyggeeffekt ved hover */
+}
+
+/* Ekstra CSS for #apne-modeller */
+#apne-modeller {
+    background-color: #1a1a1a; /* Mørk bakgrunnsfarge */
+    border-radius: 10px; /* Avrundede hjørner */
+    padding: 20px; /* Litt ekstra padding */
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5); /* Neonblå skyggeeffekt */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Glidende overganger */
+}
+
+#apne-modeller h2 {
+    color: #00FFFF; /* Neonblå tekstfarge */
+    font-size: 2em; /* Større tekststørrelse */
+    margin-bottom: 10px; /* Litt ekstra marg */
+}
+
+#apne-modeller p {
+    color: #FFFFFF; /* Hvit tekstfarge */
+    font-size: 1.2em; /* Litt større tekststørrelse */
+    line-height: 1.6; /* Bedre linjeavstand */
+}
+
+/* Hover-effekt for #apne-modeller */
+#apne-modeller:hover {
+    background-color: #222; /* Litt lysere bakgrunnsfarge ved hover */
+    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.7); /* Større skyggeeffekt ved hover */
+}
+
+/* Ekstra CSS for #figma */
+#figma {
+    background-color: #1a1a1a; /* Mørk bakgrunnsfarge */
+    border-radius: 10px; /* Avrundede hjørner */
+    padding: 20px; /* Litt ekstra padding */
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5); /* Neonblå skyggeeffekt */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Glidende overganger */
+}
+
+#figma h2 {
+    color: #00FFFF; /* Neonblå tekstfarge */
+    font-size: 2em; /* Større tekststørrelse */
+    margin-bottom: 10px; /* Litt ekstra marg */
+}
+
+#figma p {
+    color: #FFFFFF; /* Hvit tekstfarge */
+    font-size: 1.2em; /* Litt større tekststørrelse */
+    line-height: 1.6; /* Bedre linjeavstand */
+}
+
+/* Hover-effekt for #figma */
+#figma:hover {
+    background-color: #222; /* Litt lysere bakgrunnsfarge ved hover */
+    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.7); /* Større skyggeeffekt ved hover */
+}
+
+/* Ekstra CSS for #apne-modeller */
+#apne-modeller {
+    background-color: #1a1a1a; /* Mørk bakgrunnsfarge */
+    border-radius: 10px; /* Avrundede hjørner */
+    padding: 20px; /* Litt ekstra padding */
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5); /* Neonblå skyggeeffekt */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Glidende overganger */
+}
+
+#apne-modeller h2 {
+    color: #00FFFF; /* Neonblå tekstfarge */
+    font-size: 2em; /* Større tekststørrelse */
+    margin-bottom: 10px; /* Litt ekstra marg */
+}
+
+.model-container {
     display: flex;
-    justify-content: center;
-    background-color: #444;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-nav ul li {
-    margin: 0 15px;
+.model-box {
+    background-color: #222; /* Litt lysere bakgrunnsfarge */
+    border-radius: 10px; /* Avrundede hjørner */
+    padding: 20px; /* Litt ekstra padding */
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5); /* Neonblå skyggeeffekt */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Glidende overganger */
+    flex: 1 1 300px; /* Flexbox-egenskaper for å justere størrelsen */
 }
 
-nav ul li a {
-    color: #00FF00;
+.model-box h3 {
+    color: #00FFFF; /* Neonblå tekstfarge */
+    font-size: 1.5em; /* Større tekststørrelse */
+    margin-bottom: 10px; /* Litt ekstra marg */
+}
+
+.model-box p {
+    color: #FFFFFF; /* Hvit tekstfarge */
+    font-size: 1em; /* Litt større tekststørrelse */
+    line-height: 1.6; /* Bedre linjeavstand */
+}
+
+.model-box .button {
+    background-color: #008000; /* Mørkere grønn bakgrunnsfarge */
+    border: none;
+    color: #FFFFFF; /* Hvit tekstfarge */
+    padding: 10px 20px; /* Padding for å gi knappen litt størrelse */
+    text-align: center;
     text-decoration: none;
-    transition: color 0.3s;
+    display: inline-block;
+    font-size: 1em;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px; /* Avrundede hjørner */
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.5); /* Mørkere grønn skyggeeffekt */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Glidende overganger */
 }
 
-nav ul li a:hover {
-    color: #00CC00;
+.model-box .button:hover {
+    background-color: #006600; /* Enda mørkere grønn bakgrunnsfarge ved hover */
+    box-shadow: 0 8px 16px rgba(0, 128, 0, 0.7); /* Større skyggeeffekt ved hover */
 }
+
+/* Hover-effekt for .model-box */
+.model-box:hover {
+    background-color: #2a2a2a; /* Litt lysere bakgrunnsfarge ved hover */
+    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.7); /* Større skyggeeffekt ved hover */
+}
+
+/* Ekstra CSS for #lokale-modeller */
+#lokale-modeller {
+    background-color: #1a1a1a; /* Mørk bakgrunnsfarge */
+    border-radius: 10px; /* Avrundede hjørner */
+    padding: 20px; /* Litt ekstra padding */
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5); /* Neonblå skyggeeffekt */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Glidende overganger */
+}
+
+#lokale-modeller h2 {
+    color: #00FFFF; /* Neonblå tekstfarge */
+    font-size: 2em; /* Større tekststørrelse */
+    margin-bottom: 10px; /* Litt ekstra marg */
+}
+
+.model-container, .platform-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.model-box, .platform-box {
+    background-color: #222; /* Litt lysere bakgrunnsfarge */
+    border-radius: 10px; /* Avrundede hjørner */
+    padding: 20px; /* Litt ekstra padding */
+    box-shadow: 0 4px 8px rgba(0, 255, 255, 0.5); /* Neonblå skyggeeffekt */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Glidende overganger */
+    flex: 1 1 300px; /* Flexbox-egenskaper for å justere størrelsen */
+}
+
+.model-box h3, .platform-box h3 {
+    color: #00FFFF; /* Neonblå tekstfarge */
+    font-size: 1.5em; /* Større tekststørrelse */
+    margin-bottom: 10px; /* Litt ekstra marg */
+}
+
+.model-box p, .platform-box p {
+    color: #FFFFFF; /* Hvit tekstfarge */
+    font-size: 1em; /* Litt større tekststørrelse */
+    line-height: 1.6; /* Bedre linjeavstand */
+}
+
+.model-box .button, .platform-box .button {
+    background-color: #008000; /* Mørkere grønn bakgrunnsfarge */
+    border: none;
+    color: #FFFFFF; /* Hvit tekstfarge */
+    padding: 10px 20px; /* Padding for å gi knappen litt størrelse */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 8px; /* Avrundede hjørner */
+    box-shadow: 0 4px 8px rgba(0, 128, 0, 0.5); /* Mørkere grønn skyggeeffekt */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Glidende overganger */
+}
+
+.model-box .button:hover, .platform-box .button:hover {
+    background-color: #006600; /* Enda mørkere grønn bakgrunnsfarge ved hover */
+    box-shadow: 0 8px 16px rgba(0, 128, 0, 0.7); /* Større skyggeeffekt ved hover */
+}
+
+/* Hover-effekt for .model-box og .platform-box */
+.model-box:hover, .platform-box:hover {
+    background-color: #2a2a2a; /* Litt lysere bakgrunnsfarge ved hover */
+    box-shadow: 0 8px 16px rgba(0, 255, 255, 0.7); /* Større skyggeeffekt ved hover */
+}
+
+
+
 
 .container {
     width: 80%;
@@ -118,6 +330,9 @@ nav ul li a:hover {
     background-repeat: no-repeat; /* Sikrer at bildet ikke gjentas */
     padding: 20px; /* Tilpas padding etter behov */
     color: #FFFFFF; /* Tekstfarge for å sikre god lesbarhet mot bakgrunnsbildet */
+    margin: 20px 0;
+    background-color: #111;
+    border-radius: 10px;
 }
 
 footer {
@@ -177,31 +392,9 @@ footer {
 h1 {
     font-size: 2.5em;
     color: #00FFFF;
-    text-shadow: 2px 2px 5px #00FF00, -2px -2px 5px #FF00FF;
     margin: 20px 0;
     text-align: center;
+    animation: glow 1.5s infinite alternate ease-in-out;
 }
 
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.section {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #111;
-    border-radius: 10px;
-}
-
-footer {
-    background: linear-gradient(to right, #000000, #00FFFF);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
