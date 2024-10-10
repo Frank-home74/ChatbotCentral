@@ -24,6 +24,11 @@ span {
     color: #008000; /* Neonblå tekstfarge */
 }
 
+.span-red {
+    color: red;
+    font-weight: bold;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
