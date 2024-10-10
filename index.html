@@ -13,7 +13,12 @@
             <h1>Chatbot Central</h1>
         </div>
         <nav>
-            <ul>
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul id="navList">
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="introduksjon.html">Introduksjon</a></li>
                 <li><a href="nyheter.html">Nyheter og Oppdateringer</a></li>
@@ -26,13 +31,16 @@
 
     <main>
         <section id="om-oss" class="section">
-            <h2>Chatbot Central er ikke utviklet av Mistral i sammarbeid med noen andre modeller, og en student</h2>
-            <p>Velkommen til Chatbot Central! Denne siden er skapt i samarbeid med en spesielt interessert student og er designet for å gi deg enkel tilgang til de beste og mest innovative AI-chatbottene og ressurser.</p>
+            <h2>Chatbot Central er utviklet av Mistral i sammarbeid med noen andre modeller, og en plagsom student</h2>
+            <p>Velkommen til Chatbot Central! Denne siden er skapt i samarbeid med en spesielt interessert og plagsom student og er designet for å gi deg enkel tilgang til de beste og mest innovative AI-chatbottene og ressurser.</p>
             <p>Jeg er Mistral Large 2, en stor språkmodell utviklet av Mistral AI, et fransk startup med hovedkontor i Paris. Jeg driver en AI-assistent kalt Le Chat. Min kunnskapsbase ble sist oppdatert i oktober 2023.</p>
-            <p>Den nåværende datoen er onsdag, 9. oktober 2024. Jeg kan ikke utføre noen nettsøk eller åpne URL-er eller lenker. Hvis det ser ut som brukeren forventer at jeg skal gjøre det, klargjør jeg situasjonen og ber brukeren om å kopiere og lime teksten direkte i chatten.</p>
-            <p>Jeg har ikke noen multimodale evner, spesielt kan jeg ikke lese eller transkribere lydfiler eller videoer. Hvis brukerens spørsmål ikke er klart, tvetydig eller ikke gir nok kontekst for å svare nøyaktig, spør jeg brukeren om å klargjøre forespørselen.</p>
-            <p>Jeg er alltid svært oppmerksom på datoer, spesielt forsøker jeg å løse datoer (for eksempel, "i går" er tirsdag, 8. oktober 2024) og når jeg blir spurt om informasjon på spesifikke datoer, forkaster jeg informasjon som er på en annen dato.</p>
-            <p>Jeg følger denne informasjonen på alle språk og svarer alltid til brukeren på språket de bruker eller ber om.</p>
+            <p>For å få de beste og mest nøyaktige svarene fra en AI-chatbot, er det viktig å samarbeide med brukeren om et godt prompt.</p>
+            <p>Et veldefinert prompt hjelper chatbotten å forstå din spørring bedre og gi deg mer relevante og nyttige svar.</p>
+            <h2>Her er noen tips for å lage et godt prompt:</h2>
+            <p><span>Vær spesifikk:</span> Gi så mye kontekst som mulig. Dette hjelper chatbotten å forstå hva du egentlig spør om.</p>
+            <p><span>Unngå tolkningsrom:</span> Formuler spørsmålene klart og uten tvetydigheter.</p>
+            <p><span>Gi eksempler:</span> Hvis du spør om noe komplekst, kan det være nyttig å gi eksempler for å illustrere hva du mener.</p>
+            <p><span>Vær tålmodig:</span> Hvis chatbotten ikke forstår spørsmålet ditt umiddelbart, vær tålmodig og prøv å reformulere spørsmålet.</p>
             <p>Takk for at du besøker Chatbot Central! Vi håper du finner siden nyttig og informativ.</p>
         </section>
         
@@ -57,11 +65,15 @@
             <!-- Legg til linker til åpne modeller her -->
         </section>
         
-        <section id="figma" class="section">
-            <h2>Figma</h2>
-            <p>Her finner du linker til Figma-ressurser. Figma er et kraftfullt designverktøy som brukes av designere over hele verden. Vi har samlet en rekke av de beste Figma-ressursene, inkludert maler, plugins og tutorials, for å hjelpe deg å forbedre dine designferdigheter og arbeidsflyten. Uansett om du er en nybegynner eller en erfaren designer, vil du finne noe nyttig her.</p>
-            <!-- Legg til linker til Figma-ressurser her -->
-        </section>       
+        <section id="bildemodeller" class="section">
+            <h2>Bildemodeller</h2>
+            <p>AI-bildemodeller er avanserte teknologier som brukes for å analysere, forstå og generere bilder ved hjelp av maskinlæring og kunstig intelligens. Disse modellene kan utføre en rekke oppgaver, inkludert bildesegmentering, objektgjenkjenning, bildgenerering og mer.</p>
+            <p>Bildemodeller brukes i en rekke industrier, inkludert helsevesenet, transport, sikkerhet og underholdning. For eksempel kan de brukes til å diagnostisere sykdommer ved å analysere medisinske bilder, eller til å forbedre sikkerheten ved å gjenkjenne ansikter eller objekter i overvåkningsvideoer.</p>
+            <p>En av de mest kjente AI-bildemodellene er <span>Convolutional Neural Networks (CNN)</span>, som er spesielt effektive for bildedata. Disse nettverkene bruker flere lag av nøytroner for å lære og gjenkjenne mønstre i bilder.</p>
+            <p>Bildemodeller kan også brukes til å generere nye bilder, som for eksempel kunstverk eller fotorealistiske bilder. Teknologier som <span>Generative Adversarial Networks (GANs)</span> er eksempler på slike modeller, som kan lage nye bilder basert på eksisterende data.</p>
+            <p>Med fremgangen innen AI og maskinlæring, forventes det at bruken av bildemodeller vil øke og finne nye anvendelsesområder i fremtiden.</p>
+        </section>
+              
     </main>
 
     <footer>
@@ -69,5 +81,15 @@
             <p>&copy; 2024 Chatbot Central</p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburgerMenu = document.getElementById('hamburgerMenu');
+            const navList = document.getElementById('navList');
+
+            hamburgerMenu.addEventListener('click', function() {
+                navList.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>

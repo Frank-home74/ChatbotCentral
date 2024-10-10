@@ -13,7 +13,12 @@
             <h1>Chatbot Central</h1>
         </div>
         <nav>
-            <ul>
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul id="navList">
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="introduksjon.html">Introduksjon</a></li>
                 <li><a href="nyheter.html">Nyheter og Oppdateringer</a></li>
@@ -32,6 +37,31 @@
                     <p>ChatGPT er en av de mest kjente AI-chatbottene, utviklet av OpenAI. Den tilbyr både gratis og betalingsløsninger.</p>
                     <a href="https://chat.openai.com/" class="button" target="_blank">Besøk ChatGPT</a>
                 </div>
+                <div class="model-box">
+                    <h3>Le Chat</h3>
+                    <p>Le Chat er en AI-assistent drevet av Mistral AI, en fransk startup med hovedkontor i Paris. Den tilbyr avanserte språkmodeller og AI-løsninger. Le Chat er tilgjengelig både som en gratis og en betalingsløsning.</p>
+                    <a href="https://mistral.ai/" class="button" target="_blank">Besøk Mistral AI</a>
+                </div> 
+                <div class="model-box">
+                    <h3>Microsoft Copilot</h3>
+                    <p>Microsoft Copilot er en AI-assistent utviklet av Microsoft. Den tilbyr avanserte funksjoner for produktivitet og samarbeid, og er tilgjengelig både som en gratis og en betalingsløsning.</p>
+                    <a href="https://www.microsoft.com/en-us/microsoft-365/copilot" class="button" target="_blank">Besøk Microsoft Copilot</a>
+                </div>
+                <div class="model-box">
+                    <h3>Claude AI</h3>
+                    <p>Claude AI er en avansert AI-modell utviklet av Anthropic. Den tilbyr både gratis og betalingsløsninger for avanserte språkmodeller og AI-assistenter.</p>
+                    <a href="https://www.anthropic.com/claude" class="button" target="_blank">Besøk Claude AI</a>
+                </div>
+                <div class="model-box">
+                    <h3>Poe</h3>
+                    <p>Poe er en AI-assistent utviklet av Quora. Den tilbyr avanserte funksjoner for å svare på spørsmål og gi råd, og er tilgjengelig både som en gratis og en betalingsløsning.</p>
+                    <a href="https://www.quora.com/poe" class="button" target="_blank">Besøk Poe</a>
+                </div>
+                <div class="model-box">
+                    <h3>Perplexity</h3>
+                    <p>Perplexity er en AI-assistent utviklet av Perplexity AI. Den tilbyr avanserte funksjoner for å svare på spørsmål og gi råd, og er tilgjengelig både som en gratis og en betalingsløsning.</p>
+                    <a href="https://www.perplexity.ai/" class="button" target="_blank">Besøk Perplexity</a>
+                </div>                  
                 <div class="model-box">
                     <h3>BERT</h3>
                     <p>BERT (Bidirectional Encoder Representations from Transformers) er en åpen kildekode-modell utviklet av Google. Den er gratis å bruke.</p>
@@ -122,5 +152,15 @@
             <p>&copy; 2024 Chatbot Central</p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburgerMenu = document.getElementById('hamburgerMenu');
+            const navList = document.getElementById('navList');
+
+            hamburgerMenu.addEventListener('click', function() {
+                navList.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>

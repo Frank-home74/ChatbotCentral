@@ -13,7 +13,12 @@
             <h1>Chatbot Central</h1>
         </div>
         <nav>
-            <ul>
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul id="navList">
                 <li><a href="index.html">Hjem</a></li>
                 <li><a href="introduksjon.html">Introduksjon</a></li>
                 <li><a href="nyheter.html">Nyheter og Oppdateringer</a></li>
@@ -106,5 +111,15 @@
             <p>&copy; 2024 Chatbot Central</p>
         </div>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburgerMenu = document.getElementById('hamburgerMenu');
+            const navList = document.getElementById('navList');
+
+            hamburgerMenu.addEventListener('click', function() {
+                navList.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
