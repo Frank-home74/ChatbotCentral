@@ -75,11 +75,12 @@ main {
     box-shadow: var(--hover-box-shadow);
 }
 
-/* Oppdater .model-container til å være et grid */
+/* Oppdater .model-container til å være et grid med maks 5 kolonner og litt plass mellom boxene */
 .model-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 2rem 2rem; 
+    grid-template-columns: repeat(5, 1fr); /* Maks 5 kolonner */
+    gap: 1.25rem 1.25rem; /* 20px / 16px mellom rader og kolonner */
+
 }
 
 /* Oppdater .model-box til å bruke Flexbox for å sentrere innholdet */
@@ -488,6 +489,32 @@ nav ul li a:hover {
     .model-container {
         grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr)); /* 2-3 kolonner på de minste skjermene */
     }
+}
+
+/* Responsiv design for mindre skjermer */
+@media (max-width: 75rem) { /* 1200px / 16px */
+    .model-container {
+        grid-template-columns: repeat(4, 1fr); /* 4 kolonner på mindre skjermer */
+    }
+}
+
+@media (max-width: 58.125rem) { /* 930px / 16px */
+    .model-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 kolonner på enda mindre skjermer */
+    }
+}
+
+@media (max-width: 48rem) { /* 768px / 16px */
+    .model-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolonner på enda mindre skjermer */
+    }
+}
+
+@media (max-width: 30rem) { /* 480px / 16px */
+    .model-container {
+        grid-template-columns: 1fr; /* 1 kolonne på de minste skjermene */
+    }
+}
 }
 
 
