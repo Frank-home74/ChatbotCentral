@@ -20,6 +20,8 @@ header {
     height: 12.5rem; /* 200px / 16px */
 }
 
+
+
 span {
     color: #008000; /* Neonblå tekstfarge */
 }
@@ -128,9 +130,13 @@ main {
 }
 
 .model-box h3, .platform-box h3 {
-    color: var(--text-color);
+    color: #00FFFF;
     font-size: 1.5rem;
     margin-bottom: 0.625rem; /* 10px / 16px */
+}
+
+.model-box h4{
+    color: #00FFFF;
 }
 
 .model-box p, .platform-box p {
