@@ -75,6 +75,48 @@ main {
     box-shadow: var(--hover-box-shadow);
 }
 
+/* Oppdater .model-container til å være et grid */
+.model-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem 2rem; 
+}
+
+/* Oppdater .model-box til å bruke Flexbox for å sentrere innholdet */
+.model-box {
+    background-color: #222;
+    border-radius: 0.625rem; /* 10px / 16px */
+    padding: 1.25rem; /* 20px / 16px */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 255, 255, 0.5); /* Box-effekt */
+    transition: background-color 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Sentrerer innholdet horisontalt */
+}
+
+/* Sentrerer knappen i bunnen av .model-box */
+.model-box .button {
+    background-color: var(--button-background-color);
+    border: none;
+    color: #FFFFFF;
+    padding: 0.625rem 1.25rem; /* 10px 20px / 16px */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 0.625rem 0; /* 10px 0 / 16px */
+    cursor: pointer;
+    border-radius: 0.5rem; /* 8px / 16px */
+    box-shadow: var(--button-box-shadow);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-top: auto; /* Plasserer knappen i bunnen */
+}
+
+.model-box .button:hover {
+    background-color: var(--button-hover-background-color);
+    box-shadow: var(--button-hover-box-shadow);
+}
+
 .model-box, .platform-box {
     background-color: #222;
     border-radius: 0.625rem; /* 10px / 16px */
@@ -429,19 +471,26 @@ nav ul li a:hover {
     }
 }
 
-/* Definer keyframes for solanimasjonen */
-/* Definer keyframes for solanimasjonen */
-/*@keyframes shine {
-    0% {
-        background: radial-gradient(circle, rgb(255, 255, 255), rgba(0, 255, 255, 0) 70%);
+/* Responsiv design for mindre skjermer */
+@media (max-width: 75rem) { /* 1200px / 16px */
+    .model-container {
+        grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); /* 4-5 kolonner på mindre skjermer */
     }
-    70% {
-        background: radial-gradient(circle, rgba(251, 252, 252, 0.872), rgba(0, 255, 255, 0) 70%);
+}
+
+@media (max-width: 48rem) { /* 768px / 16px */
+    .model-container {
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr)); /* 3-4 kolonner på enda mindre skjermer */
     }
-    100% {
-        background: radial-gradient(circle, rgba(0, 255, 255, 0.5), rgba(0, 255, 255, 0) 70%);
+}
+
+@media (max-width: 30rem) { /* 480px / 16px */
+    .model-container {
+        grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr)); /* 2-3 kolonner på de minste skjermene */
     }
-}*/
+}
+
+
 
 
 
