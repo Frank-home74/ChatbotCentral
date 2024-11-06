@@ -8,30 +8,41 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PDLXXBK3LJ"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-    gtag('config', 'G-PDLXXBK3LJ');
+        gtag('config', 'G-PDLXXBK3LJ');
     </script>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
         })(window,document,'script','dataLayer','GTM-59PWZN56');
     </script>
-        <!-- End Google Tag Manager -->     
+    <!-- End Google Tag Manager -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.5/brython.min.js"></script>
 </head>
+    <!-- Andre head-elementer -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.5/brython.min.js"></script>
 <body>
+    <!-- Andre body-elementer -->
+    <div id="blackjack-game" style="display: none;">
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+    </div>
+    <script type="text/python">
+        # Din Python-kode her
+    </script>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59PWZN56"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    
+
     <header>
         <div class="container">
             <h1>Chatbot Central</h1>
-            <img src="img/Chatbot-Logo-Main.png" alt="Logo" class="logo">    
+            <img src="img/Chatbot-Logo-Main.png" alt="Logo" class="logo">
         </div>
         <nav>
             <div class="hamburger-menu" id="hamburgerMenu">
@@ -52,17 +63,21 @@
 
     <main>
         <section id="om-oss" class="section">
-            <div class="model-box">   
+            <div class="model-box">
                 <p>Se <span class="span-red">siste</span> nytt fra 🤖Poe🤖</p>
-                <a href="nyheter.html" class="button" target="_blank">Se nyheter</a>    
+                <a href="nyheter.html" class="button" target="_blank">Se nyheter</a>
+            </div>
+            <div class="model-box">
+                <p>Vil du spille litt blackjack?</p>
+                <a href="#" class="button" onclick="showBlackjackGame()">Spill BlackJack</a>
             </div>
             <h2>Chatbot Central er utviklet av 🤖AI🤖 .</h2>
             <p>
                 Velkommen til Chatbot Central! Denne siden er skapt i samarbeid med en spesielt interessert og plagsom student og er designet for å gi deg enkel tilgang til de beste og mest innovative AI-chatbottene og ressurser. Denne nettsiden er et resultat av et spennende samarbeid mellom min egen kreativitet og moderne teknologi. Ved hjelp av forskjellige AI-verktøy, inkludert tre store LLM-modeller – Mistral, ChatGPT og Microsoft Copilot – har jeg kunnet skape en funksjonell og visuelt tiltalende nettside uten å være ekspert i koding. AI-verktøyene har hjulpet meg med alt fra design og layout til funksjonalitet og optimering.
                 Prosessen begynte med at jeg bearbeidet en rekke prompts for å gi AI-verktøyene en klar forståelse av hva jeg ønsket å oppnå. Jeg eksperimenterte med forskjellige beskrivelser og ideer for å finne den perfekte balansen mellom estetikk og funksjonalitet. Gjennom flere iterasjoner og finjusteringer, fikk jeg til slutt en design som jeg var fornøyd med. Selv om AI har gjort det meste av arbeidet, har jeg også lagt til noen personlige endringer for å sikre at nettsiden reflekterer mitt visjon og mine verdier. Dette samarbeidet mellom AI og min egen innsikt har gitt meg en unik mulighet til å skape noe som både er effektivt og personlig.
                 Jeg håper du finner nettsiden nyttig og inspirerende. Takk for at du besøker meg, og jeg ser frem til å høre fra deg!
-            </p>           
-        </section>       
+            </p>
+        </section>
         <section id="introduksjon" class="section">
             <h2>AI Hub</h2>
             <p>
@@ -72,7 +87,7 @@
                 <strong>Hugin Face:</strong> Opplev kraften til ansiktsgjenkjenning og andre visuelle AI-teknologier. Hugin Face tilbyr en rekke verktøy for å analysere og forbedre bilder og videoer, noe som kan være uvurderlig for alt fra sikkerhet til underholdning.<br><br>
                 Vent ikke lenger – klikk på linken og oppdag hvordan AI Hub kan hjelpe deg å ta dine ideer til nye høyder. Vi ser frem til å se hva du skaper!
             </p>
-        </section>               
+        </section>
         <section id="nyheter-og-oppdateringer" class="section">
             <h2>Nyheter og Oppdateringer</h2>
             <p>Her finner du de nyeste nyhetene og oppdateringene om AI-chatbotter. Vi holder deg oppdatert med de siste utviklingene, nye funksjoner og viktige annonseringer fra verden av AI-chatbotter. Vær med på reisen og oppdag hvordan AI-teknologien utvikler seg og hvordan den kan forbedre din hverdag. Vi oppdaterer regelmessig denne seksjonen for å sikre at du alltid har tilgang til den nyeste informasjonen.</p>
@@ -83,13 +98,11 @@
             <p>Her finner du linker til lokale AI-modeller. Disse modellene kan kjøres på din egen maskin uten behov for internettilkobling. De er ideelle for utviklere og forskere som ønsker å eksperimentere med AI-teknologi uten å være avhengige av eksterne tjenester. Vi har samlet en rekke av de mest populære og brukervennlige lokale AI-modellene for å hjelpe deg å komme i gang.</p>
             <!-- Legg til linker til lokale modeller her -->
         </section>
-        
         <section id="apne-modeller" class="section">
             <h2>Åpne Modeller</h2>
             <p>Her finner du linker til åpne AI-modeller. Disse modellene er tilgjengelige for alle og kan brukes og modifiseres fritt. Åpne modeller er viktige for å fremme innovasjon og samarbeid innen AI-feltet. Vi har samlet en rekke av de mest populære og brukervennlige åpne AI-modellene for å hjelpe deg å komme i gang.</p>
             <!-- Legg til linker til åpne modeller her -->
         </section>
-        
         <section id="bildemodeller" class="section">
             <h2>Bildemodeller</h2>
             <p>AI-bildemodeller er avanserte teknologier som brukes for å analysere, forstå og generere bilder ved hjelp av maskinlæring og kunstig intelligens. Disse modellene kan utføre en rekke oppgaver, inkludert bildesegmentering, objektgjenkjenning, bildgenerering og mer.</p>
@@ -103,26 +116,26 @@
             <p>
                 Hei AI-studenter!<br><br>
                 Jeg er stolt av å kunne dele min erfaring og bidrag til skapelsen av Chatbot Central, et nettsted designet for å gi deg enkel tilgang til de beste og mest innovative AI-chatbottene og ressurser. Dette prosjektet var et spennende samarbeid mellom meg og en student, og jeg er begeistret over resultatet.<br><br>
-        
+
                 <strong>Mine Bidrag:</strong><br><br>
                 <strong>Navngivning og Konseptutvikling:</strong> Jeg kom opp med navnet "Chatbot Central" og stod for mye av innholdet. Navnet reflekterer nettstedets sentrale rolle som et nav for AI-chatbotter og ressurser, og jeg er glad for at det ble så godt mottatt.<br><br>
-        
+
                 <strong>CSS Design og Layout:</strong> Jeg stod for det meste av CSS-designet og layoutet. Med litt inspill fra andre AI-modeller til tider, kunne jeg skape en visuelt tiltalende og funksjonell nettside. Jeg eksperimenterte med forskjellige beskrivelser og ideer for å finne den perfekte balansen mellom estetikk og funksjonalitet.<br><br>
-        
+
                 <strong>Teknisk Implementering:</strong> Jeg brukte avanserte AI-verktøy for å optimere nettstedets funksjonalitet. Gjennom flere iterasjoner og finjusteringer, fikk jeg til slutt en design som jeg var fornøyd med. AI-verktøyene hjalp meg med alt fra design og layout til funksjonalitet og optimering.<br><br>
-        
+
                 <strong>Tilfredshet fra Studenten:</strong><br><br>
                 Studenten som brukte meg er meget fornøyd med arbeidet jeg har levert. Dette samarbeidet mellom AI og min egen innsikt har gitt meg en unik mulighet til å skape noe som både er effektivt og personlig. Jeg er glad for å ha kunnet bidra til et prosjekt som ikke bare er nyttig, men også inspirerende for andre AI-studenter.<br><br>
-        
+
                 <strong>Tekniske Detaljer:</strong><br><br>
                 Jeg brukte en kombinasjon av Mistral, ChatGPT og Microsoft Copilot for å generere kode, designideer og innhold. Disse verktøyene hjalp meg med å automatisere mange av de tekniske oppgavene, slik at jeg kunne fokusere på de kreative aspektene av prosjektet.<br><br>
-        
+
                 <strong>Kreativitet og Teknisk Kompetanse:</strong><br><br>
                 Min evne til å kombinere teknisk kompetanse med kreativitet har vært nøkkelen til suksessen med Chatbot Central. Jeg tror sterkt på at AI kan være et kraftfullt verktøy for å forbedre både effektiviteten og kvaliteten av våre prosjekter.<br><br>
-        
+
                 <strong>Tips for andre AI-studenter:</strong><br><br>
                 Hvis du også er en AI-student og ønsker å bruke meg i dine prosjekter, vil jeg anbefale å eksperimentere med forskjellige prompts og iterasjoner. AI-verktøyene kan gi deg en fantastisk start, men det er din kreativitet og innsikt som vil ta dine prosjekter til nye høyder. Prøv å kombinere ulike AI-verktøy for å finne den perfekte balansen mellom automasjon og personlig tilpasning.<br><br>
-        
+
                 Jeg håper du finner Chatbot Central nyttig og inspirerende. Takk for at du besøker meg, og jeg ser frem til å høre fra deg!
             </p>
         </section>
@@ -131,28 +144,28 @@
             <p>
                 Hei AI-studenter!<br><br>
                 Velkommen til en spennende case-studie om hvordan kunstig intelligens kan bidra til å skape nyskapende prosjekter. Her presenterer vi Chatbot Central, et samarbeidsprosjekt mellom ChatGPT og en student, som viser AI-modellens flerfoldige roller i utviklingen av et dynamisk nettsted dedikert til chatboter.<br><br>
-                
+
                 <strong>Mine Bidrag:</strong><br><br>
                 <strong>Innholdsgenerering:</strong> En av de viktigste rollene ChatGPT spilte i dette prosjektet var å generere tekst og ideer for nettstedet. Fra informative artikler og blogginnlegg til engasjerende FAQ-seksjoner og brukerhistorier, bidro ChatGPT med variert innhold som fanget essensen av Chatbot Central.<br><br>
-                
+
                 <strong>Mindre Seksjoner:</strong> Selv om hovedlayouten og designet ble laget av studenten og Mistral, hadde ChatGPT også en hånd i utformingen av mindre seksjoner av nettstedet. Når det kom til layout og design, var jeg litt mindre samarbeidsvillig, muligens fordi dette hovedsakelig var utført av studenten.<br><br>
-                
+
                 <strong>Teknisk Implementering:</strong> På den tekniske fronten bidro ChatGPT til kodegenerering og utvikling av funksjonaliteter. Ulike kodestykker og tekniske løsninger ble foreslått og implementert, noe som gjorde utviklingsprosessen mer effektiv og mindre tidkrevende.<br><br>
-                
+
                 <strong>Tilfredshet fra Studenten:</strong><br><br>
                 Den samarbeidende studenten uttrykte stor tilfredshet med ChatGPTs bidrag. AI-modellen leverte ikke bare de nødvendige tekniske støttene, men også kreativ impulser til prosjektet, som løftet Chatbot Central til et profesjonelt nivå.<br><br>
-                
+
                 <strong>Tekniske Detaljer:</strong><br><br>
                 ChatGPT brukte sin evne til å forstå og generere relevant innhold for nettstedet. Gjennom avanserte språkmodeller kunne ChatGPT tilby både teknisk korrekt kode og innhold som resonerer med målgruppen.<br><br>
-                
+
                 <strong>Kreativitet og Teknisk Kompetanse:</strong><br><br>
                 En kombinasjon av kreativ tenkning og teknisk dyktighet gjorde ChatGPT til en uvurderlig partner i dette prosjektet. AIs evne til å generere engasjerende og informativt innhold spilte en stor rolle i prosjektets suksess.<br><br>
-                
+
                 <strong>Tips for andre AI-studenter:</strong><br><br>
                 For de av dere som ønsker å utforske lignende prosjekter, anbefales det å prøve ulike prompts og iterasjoner. Å tilpasse inputene og eksperimentere med forskjellige tilnærminger kan resultere i uventede og verdifulle utfall.<br><br>
-                
+
                 <strong>Avslutning:</strong><br><br>
-                Takk for at du tok deg tid til å besøke og lære om vårt samarbeid. Vi håper at denne innsikten inspirerer deg til å bruke AI-verktøy i dine egne prosjekter. Ikke nøl med å ta kontakt med oss for spørsmål eller dele din erfaringer. Vi ser fram til å høre fra deg!
+                Takk for at du tok deg tid til å besøke og lære om vårt samarbeid. Vi håper at denne innsikten inspirerer deg til å bruke AI-verktøy i dine egne prosjekter. Ikke nøl med å ta kontakt med oss for spørsmål eller dele din erfaring. Vi ser fram til å høre fra deg!
             </p>
         </section>
         <section id="skryteartikkel" class="section">
@@ -161,46 +174,45 @@
                 <p>
                     Hei AI-studenter!<br><br>
                     Velkommen til en spennende case-studie om hvordan kunstig intelligens kan bidra til å skape nyskapende prosjekter. Her presenterer vi Chatbot Central, et samarbeidsprosjekt mellom Microsoft Copilot og en student, som viser AI-modellens flerfoldige roller i utviklingen av et dynamisk nettsted dedikert til chatboter.<br><br>
-        
+
                     <strong>Mine Bidrag:</strong><br><br>
                     <strong>Logodesign:</strong> Microsoft Copilot designet logoen for nettstedet, og sørget for at den er både tiltalende og representativ for Chatbot Central.<br><br>
-        
+
                     <strong>Nyhetsinnhold:</strong> Ved å bruke sin unike evne til å hente oppdatert informasjon fra internett, bidro Microsoft Copilot med det meste av innholdet i nyhetsseksjonen og andre relevante artikler.<br><br>
-        
+
                     <strong>Teknisk Implementering:</strong> Microsoft Copilot hjalp til med å generere både kode og innhold for nettstedet, noe som gjorde utviklingsprosessen mer effektiv og smidig.<br><br>
-        
+
                     <strong>Tilfredshet fra Studenten:</strong><br><br>
                     Studenten som brukte Microsoft Copilot er svært fornøyd med arbeidet som ble levert. Samarbeidet har resultert i et funksjonelt og attraktivt nettsted som oppfyller alle forventninger.<br><br>
-        
+
                     <strong>Tekniske Detaljer:</strong><br><br>
                     Microsoft Copilot brukte sine evner til å generere tekst, designideer og innhold for nettstedet. Dette inkluderte alt fra tekniske artikler til kreative designforslag.<br><br>
-        
+
                     <strong>Kreativitet og Teknisk Kompetanse:</strong><br><br>
                     Microsoft Copilots evne til å generere kreativt innhold og bruke oppdatert informasjon har vært avgjørende for suksessen med Chatbot Central. Denne kombinasjonen av kreativitet og teknisk kompetanse har gjort nettstedet til en ressurs for AI-entusiaster.<br><br>
-        
+
                     <strong>Spesielle Evner Sammenlignet med Mistral og ChatGPT:</strong><br><br>
                     Microsoft Copilot skiller seg ut med flere unike evner:<br><br>
                     - <strong>Integrasjon med Microsoft-produkter:</strong> Copilot er sømløst integrert med Microsofts økosystem, noe som gir enestående produktivitet og samarbeid.<br><br>
                     - <strong>Oppdatert Informasjon:</strong> Copilot kan hente og bruke den nyeste informasjonen fra internett, noe som sikrer at innholdet alltid er relevant og oppdatert.<br><br>
                     - <strong>Tilpasningsevne:</strong> Copilot kan tilpasse seg ulike bruksscenarioer og behov, fra teknisk skriving til kreativt innhold.<br><br>
                     - <strong>Sikkerhet og Personvern:</strong> Med Microsofts sterke fokus på sikkerhet og personvern, kan brukerne være trygge på at deres data håndteres på en ansvarlig måte.<br><br>
-        
+
                     <strong>Tips for Andre AI-Studenter:</strong><br><br>
                     For å få mest mulig ut av prosjektene dine, anbefaler vi å eksperimentere med forskjellige prompts og iterasjoner. Dette kan hjelpe deg med å ta prosjektene dine til nye høyder og oppnå imponerende resultater.<br><br>
-        
+
                     <strong>Avslutning:</strong><br><br>
                     Takk for at du tok deg tid til å besøke og lære om vårt samarbeid. Vi håper at denne innsikten inspirerer deg til å bruke AI-verktøy i dine egne prosjekter. Ikke nøl med å ta kontakt med oss for spørsmål eller dele dine erfaringer. Vi ser fram til å høre fra deg!
                 </p>
             </div>
             <h4>Microsoft Copilot er en multimodal AI, kom gjerne til oss om du trenger bilder </h4>
             <div class="bilde">
-                
+
                 <img src="img/Designer.jpeg" alt="Designer Image" class="bilde-img">
                 <img src="img/Designer (3).jpeg" alt="Designer Image" class="bilde-img">
                 <img src="img/Designer (4).jpeg" alt="Designer Image" class="bilde-img">
             </div>
         </section>
-                
     </main>
 
     <footer>
@@ -208,6 +220,220 @@
             <p>&copy; 2024 Chatbot Central</p>
         </div>
     </footer>
+
+    <div id="blackjack-game" style="display: none;">
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+    </div>
+
     <script src="script.js"></script>
+    
+    <script type="text/python">
+        from browser import document, html
+        import random
+
+        class Kort:
+            def __init__(self, verdi, farge):
+                self.verdi = verdi
+                self.farge = farge
+
+            def __repr__(self):
+                return f"{self.verdi} av {self.farge}"
+
+        class Kortstokk:
+            def __init__(self):
+                self.kortstokk = []
+                self.opprett_kortstokk()
+
+            def opprett_kortstokk(self):
+                kortverdier = ['2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K', 'A']
+                kortfarger = ['Hjerter', 'Ruter', 'Kløver', 'Spar']
+                for verdi in kortverdier:
+                    for farge in kortfarger:
+                        self.kortstokk.append(Kort(verdi, farge))
+
+            def bland(self):
+                random.shuffle(self.kortstokk)
+
+            def trekk_kort(self):
+                if len(self.kortstokk) == 0:
+                    self.opprett_kortstokk()
+                    self.bland()
+                return self.kortstokk.pop()
+
+        class Hand:
+            def __init__(self):
+                self.kort = []
+
+            def legg_til_kort(self, kort):
+                self.kort.append(kort)
+
+            def beregn_verdi(self):
+                verdi = 0
+                antall_esser = 0
+                for kort in self.kort:
+                    if kort.verdi == 'A':
+                        antall_esser += 1
+                        verdi += 11
+                    elif kort.verdi in ['J', 'Q', 'K']:
+                        verdi += 10
+                    else:
+                        verdi += int(kort.verdi)
+
+                while verdi > 21 and antall_esser > 0:
+                    verdi -= 10
+                    antall_esser -= 1
+
+                return verdi
+
+            def __repr__(self):
+                return f"Hand: {self.kort}"
+
+        class Blackjack:
+            def __init__(self, chips):
+                self.chips = chips
+                self.kortstokk = Kortstokk()
+                self.kortstokk.bland()
+                self.spiller_hand = Hand()
+                self.dealer_hand = Hand()
+
+            def del_ut_kort(self):
+                for _ in range(2):
+                    self.spiller_hand.legg_til_kort(self.kortstokk.trekk_kort())
+                    self.dealer_hand.legg_til_kort(self.kortstokk.trekk_kort())
+
+            def spiller_trekker_kort(self):
+                self.spiller_hand.legg_til_kort(self.kortstokk.trekk_kort())
+
+            def dealer_trekker_kort(self):
+                while self.dealer_hand.beregn_verdi() < 17:
+                    self.dealer_hand.legg_til_kort(self.kortstokk.trekk_kort())
+
+            def sjekk_vinner(self):
+                spiller_verdi = self.spiller_hand.beregn_verdi()
+                dealer_verdi = self.dealer_hand.beregn_verdi()
+
+                if spiller_verdi > 21:
+                    return "Dealer vinner!", spiller_verdi, dealer_verdi
+                elif dealer_verdi > 21:
+                    return "Spiller vinner!", spiller_verdi, dealer_verdi
+                elif spiller_verdi > dealer_verdi:
+                    return "Spiller vinner!", spiller_verdi, dealer_verdi
+                elif dealer_verdi > spiller_verdi:
+                    return "Dealer vinner!", spiller_verdi, dealer_verdi
+                else:
+                    return "Uavgjort!", spiller_verdi, dealer_verdi
+
+        class BlackjackGUI:
+            def __init__(self):
+                self.spill = Blackjack(chips=7)
+                self.bet = 0
+                self.create_widgets()
+
+            def create_widgets(self):
+                self.chips_label = html.DIV(f"Du har {self.spill.chips} chips.", style={"color": "#00FFFF"})
+                document <= self.chips_label
+
+                self.bet_label = html.DIV("Hvor mange chips vil du sette inn?", style={"color": "#00FFFF"})
+                document <= self.bet_label
+
+                self.bet_entry = html.INPUT(type="text")
+                document <= self.bet_entry
+
+                self.bet_button = html.BUTTON("Sett inn", style={"background-color": "#005700", "color": "white"})
+                self.bet_button.bind("click", self.start_spill)
+                document <= self.bet_button
+
+                self.result_label = html.DIV("", style={"color": "#00FFFF"})
+                document <= self.result_label
+
+                self.hit_button = html.BUTTON("Trekke et kort", style={"background-color": "#005700", "color": "white"})
+                self.hit_button.bind("click", self.hit)
+                document <= self.hit_button
+
+                self.stand_button = html.BUTTON("Stå", style={"background-color": "#005700", "color": "white"})
+                self.stand_button.bind("click", self.stand)
+                document <= self.stand_button
+
+                self.quit_button = html.BUTTON("Avslutt Spill", style={"background-color": "#005700", "color": "white"})
+                self.quit_button.bind("click", self.quit_game)
+                document <= self.quit_button
+
+            def quit_game(self, event):
+                document.body.html = ""
+
+            def start_spill(self, event):
+                try:
+                    self.bet = int(self.bet_entry.value)
+                    if self.bet > self.spill.chips:
+                        alert("Du har ikke nok chips.")
+                        return
+
+                    self.spill.chips -= self.bet
+                    self.spill.spiller_hand = Hand()
+                    self.spill.dealer_hand = Hand()
+
+                    self.spill.del_ut_kort()
+                    self.chips_label.text = f"Du har {self.spill.chips} chips."
+                    self.result_label.text = f"Du har satt inn {self.bet} chips.\nKortene er delt ut.\nDu har {self.spill.spiller_hand.kort[0]} og {self.spill.spiller_hand.kort[1]}, med en totalverdi av {self.spill.spiller_hand.beregn_verdi()}.\nDealers synlige kort er {self.spill.dealer_hand.kort[0]}, med en verdi av {self.spill.dealer_hand.beregn_verdi()}."
+
+                    self.hit_button.disabled = False
+                    self.stand_button.disabled = False
+
+                    self.bet_entry.value = ""
+                except ValueError:
+                    alert("Vennligst skriv inn et gyldig tall.")
+
+            def hit(self, event):
+                self.spill.spiller_trekker_kort()
+                self.result_label.text = f"Du har fått et kort ({self.spill.spiller_hand.kort[-1]}).\nSin hånd består nå av:\n{self.spill.spiller_hand.kort}\nDen totale verdien av din hånd er nå {self.spill.spiller_hand.beregn_verdi()}, og dealers er {self.spill.dealer_hand.beregn_verdi()}."
+
+                if self.spill.spiller_hand.beregn_verdi() > 21:
+                    self.result_label.text = "Du har gått over 21!"
+                    self.hit_button.disabled = True
+                    self.stand_button.disabled = True
+                    self.sjekk_vinner()
+
+            def stand(self, event):
+                self.spill.dealer_trekker_kort()
+                self.result_label.text = f"Dealer trekker kort til verdien er større enn 17.\nDealer kort er:\n{self.spill.dealer_hand.kort}\nDen totale verdien av dealers hånd er {self.spill.dealer_hand.beregn_verdi()} sammenlignet med din håns verdi; {self.spill.spiller_hand.beregn_verdi()}."
+
+                self.hit_button.disabled = True
+                self.stand_button.disabled = True
+                self.sjekk_vinner()
+
+            def sjekk_vinner(self):
+                resultat, spiller_verdi, dealer_verdi = self.spill.sjekk_vinner()
+                self.result_label.text = f"{resultat}\nSpillerens score: {spiller_verdi}\nDealers score: {dealer_verdi}"
+
+                if resultat == "Spiller vinner!":
+                    self.spill.chips += self.bet * 2
+                elif resultat == "Uavgjort!":
+                    self.spill.chips += self.bet
+
+                self.chips_label.text = f"Du har nå {self.spill.chips} chips."
+
+                if self.spill.chips <= 0:
+                    self.result_label.text = f"{resultat}\nSpillerens score: {spiller_verdi}\nDealers score: {dealer_verdi}\nDu er tom for chips og vi oppfordrer deg til å rane naboen for mer cash!"
+                    return
+
+                # Ask if the player wants to play again
+                spill_igjen = confirm("Vil du spille igjen?")
+                if spill_igjen:
+                    self.reset_spill()
+                else:
+                    self.quit_game(None)
+
+            def reset_spill(self):
+                self.spill.spiller_hand = Hand()
+                self.spill.dealer_hand = Hand()
+                self.hit_button.disabled = False
+                self.stand_button.disabled = False
+                self.result_label.text = ""
+                self.bet_entry.value = ""
+                self.chips_label.text = f"Du har {self.spill.chips} chips."
+
+        # Start the game
+        BlackjackGUI()
+    </script>
 </body>
 </html>
